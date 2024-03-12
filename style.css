@@ -4,7 +4,9 @@
   }
 
 
-
+.highlight {
+    color: #FF00B1;
+}
 
 
 .headerLine {
@@ -32,6 +34,14 @@
 .headerLink {
     color: white;
     text-decoration: none;
+    font-family: 'DrukTextWide-Medium';
+    font-size: 16px;
+    padding: 8px;
+}
+
+.headerLink:hover {
+    color: #FFCF00;
+    text-decoration: underline;
     font-family: 'DrukTextWide-Medium';
     font-size: 16px;
     padding: 8px;
@@ -128,15 +138,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 186px;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin: 0;
     overflow-x: hidden;
     overflow-y: visible;
 
 }
 
 .animatedText {
-    color: #BC01DE;
+    color: #FF00B1;
     font-size: 48px;
     font-family: Druk Wide;
     font-weight: 500;
@@ -144,10 +153,18 @@ body {
     word-wrap: break-word;
     white-space: nowrap;
     text-shadow: 0px 0px 13.7px #BC01DE;
+
+
+    /* display: flex;
+    width: 1280px; */
+    /* height: 88px; */
+    padding: 8px 0px 8px 8px;
+    /* justify-content: flex-end;
+    align-items: center; */
 }
 
 .animatedTextLarge {
-    color: #BC01DE;
+    color: #FF0C00;
     font-size: 96px;
     font-family: Druk Wide;
     font-weight: 500;
@@ -184,7 +201,7 @@ body {
     align-items: flex-start;
     gap: 23px;
     align-self: stretch;
-    background-color: #FF00B1;
+    background-color: #BC01DE;
 }
 
 .imgBlock {
@@ -202,6 +219,17 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.imageStroke {
+    flex: 1 0 0;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: solid 44px #FF0C00; */
 }
 
 
@@ -365,12 +393,14 @@ p {
 }
 
 .list {
+    display: flex;
     justify-content: flex-start;
+    gap: 48px;
 }
 
 .iconLink {
     display: flex;
-    gap: 20px;
+    gap: 8px;
     align-items: flex-start;
     margin: 8px 0;
 }
