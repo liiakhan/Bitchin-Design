@@ -118,6 +118,8 @@
         align-items: flex-start;
         gap: 24px;
         flex: 1 0 0;
+
+        background: #000;
     }
 
     .portfolioSection {
@@ -136,8 +138,15 @@
         align-items: center;
         gap: 8px;
         padding: 0 128px;
+
+    
     }
 
+    .portfolioTextBlock p {
+        text-align: center;
+    }
+
+    
     .projectsBlock {
         display: flex;
         flex-direction: column;
@@ -323,6 +332,7 @@
         display: flex;
         padding: 48px 16px;
         flex-direction: column;
+        background: #000;
     }
 
     .portfolioSection {
