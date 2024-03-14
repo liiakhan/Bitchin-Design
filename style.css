@@ -25,6 +25,8 @@
     width: 100vw;
     background-color: black;
 }
+
+
 .headerLineContent {
     display: flex;
     flex-direction: row; 
@@ -58,8 +60,71 @@
 }
 
 .logo {
-    width: 182px;
+    width: 128px;
 }
+
+.logoMobile {
+    display: none;
+}
+
+
+/* header small screem */
+
+@media (max-width: 580px) {
+    .logo {
+        width: 0;
+    }
+
+    .logoMobile {
+        display: block;
+        width: 72px;
+    }
+
+
+    .headerLine {
+        position: fixed;
+        top: 0; 
+        width: 100vw;
+        height: fit-content;
+        background-color: black;
+    }
+
+    
+    .headerLineContent {
+        display: flex;
+        flex-direction: row; 
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .headerTabsGroup {
+        display: flex;
+        justify-content: right;
+        gap: 8px;
+    }
+    
+    .headerLink {
+        color: white;
+        text-decoration: none;
+        font-family: 'DrukTextWide-Medium';
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .headerLink:hover {
+        color: #FFCF00;
+        text-decoration: underline;
+        font-family: 'DrukTextWide-Medium';
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+
+
 
 /* primary screen */
 
@@ -499,7 +564,7 @@ p {
     align-items: center;
     gap: 70px;
     height: fit-content;
-    padding: 48px 0 0 0;
+    padding: 48px 0 48px 0;
 }
 
 .portfolioTextBlock {
