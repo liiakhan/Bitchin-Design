@@ -71,7 +71,7 @@
     display: none;
 }
 
-@media (min-width: 581px) {
+@media (min-width: 801px) {
     .aboutSection {
 
     }
@@ -235,7 +235,7 @@
 
 /* header small screem */
 
-@media (max-width: 580px) {
+@media (max-width: 801px) {
     .logo {
         display: none;
     }
